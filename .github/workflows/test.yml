@@ -43,12 +43,12 @@ jobs:
             echo "MY_GM_PASSWORD is configured"
           fi
 
-          if [ -z "$OWM_API_Key" ]; then
-            echo "OWM_API_Key secret is not set!"
+          if [ -z "$OWM_API_KEY" ]; then
+            echo "OWM_API_KEY secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
           else
-            echo "OWM_API_Key is configured"
+            echo "OWM_API_KEY is configured"
           fi
           
           echo ""
