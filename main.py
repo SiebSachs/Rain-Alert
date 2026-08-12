@@ -7,7 +7,7 @@ import os
 # select Edit Configuration -> Select the python script configuration or create a new one -> search on the right
 # side the field for Environment variables -> insert the variables -> save them with klick on ok"
 
-MY_EMAIL = "siebsachs@gmail.com"
+MY_EMAIL = os.environ.get('MY_GM_EMAIL')
 MY_PASSWORD = os.environ.get('MY_GM_PASSWORD')
 
 account_sid = "SKd38fd54e23017faa8668ed5795e339d2"
