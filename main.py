@@ -10,16 +10,17 @@ import os
 MY_EMAIL = os.environ.get('MY_GM_EMAIL')
 MY_PASSWORD = os.environ.get('MY_GM_PASSWORD')
 
-account_sid = "SKd38fd54e23017faa8668ed5795e339d2"
-auth_token = os.environ.get('AUTH_TOKEN_TWILIO')
+#account_sid = "SKd38fd54e23017faa8668ed5795e339d2"
+#auth_token = os.environ.get('AUTH_TOKEN_TWILIO')
 #print(auth_token)
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_key = os.environ.get('OWM_API_KEY')
+print(api_key)
 parameters = {
     "lat": 48.710814,
     "lon": 9.459378,
-    "appid": api_key,
+    "appid": f"{api_key}",
     "cnt": 4,
 }
 
