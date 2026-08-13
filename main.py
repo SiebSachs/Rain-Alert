@@ -34,7 +34,7 @@ print(weather_data)
 for item in weather_data["list"]:
     if item["weather"][0]["id"] > 700:
         print("Bring an umprella")
-        client = Client(account_sid, auth_token)
+        #client = Client(account_sid, auth_token)
         # Send an SMS
         #message = client.messages.create(
         #    body="It's going to rain today. Remember to bring an umbrella.",
