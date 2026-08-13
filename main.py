@@ -32,7 +32,7 @@ print(weather_data)
 # https://openweathermap.org/api/weather-conditions#Weather-Condition-Codes-2   # Weather condition codes -> everything < 700 means rain
 
 for item in weather_data["list"]:
-    if item["weather"][0]["id"] > 700:
+    if item["weather"][0]["id"] < 700:
         print("Bring an umprella")
         #client = Client(account_sid, auth_token)
         # Send an SMS
