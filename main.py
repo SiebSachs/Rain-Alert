@@ -16,7 +16,7 @@ MY_PASSWORD = os.environ.get('MY_GM_PASSWORD')
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_key = os.environ.get('OWM_API_KEY')
-print(api_key)
+print(f"My ...: {api_key}")
 parameters = {
     "lat": 48.710814,
     "lon": 9.459378,
